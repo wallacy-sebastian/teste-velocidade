@@ -13,7 +13,7 @@ buffer = BufferPacotes(tamanhoPacote, quantidadeMaximaPacotes, tamanhoBuffer, te
 confirmados = []
 mutexConfirmados = threading.Lock()
 delay = 0.004
-HOST = 'localhost'
+HOST = '10.90.67.91'
 PORT = 5000
 ADDRESS = (HOST, PORT)
 dados = bytes()
@@ -124,7 +124,7 @@ t4.join()
 sock.close()
 
 print("Upload")
-print("Taxa de pacotes/s: %.2f" % buffer.obterTaxaPacotesSegundo())
-print("Taxa de bits/s: %.2f" % buffer.obterTaxaBitsSegundo())
-print("Tempo total executado: %.2f segundos" % buffer.obterTempoTotal())
-print("Total de bits transmitidos: %.2f bits" % buffer.obterTotalBits())
+print("Taxa de pacotes/s: :,%.2f" % buffer.obterTaxaPacotesSegundo())
+print("Taxa de bits/s: :,%.2f" % buffer.obterTaxaBitsSegundo())
+print("Tempo total executado: :,%.2f segundos" % buffer.obterTempoTotal())
+print("Total de bits transmitidos: :,%.2f bits" % buffer.obterTotalBits())

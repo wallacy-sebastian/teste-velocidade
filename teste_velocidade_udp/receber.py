@@ -4,7 +4,7 @@ from pacote import Pacote
 
 # Server Setup
 print("Configurando servidor UDP")
-HOST = '25.34.179.186'
+HOST = '10.90.67.91'
 PORT = 5000
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.bind((HOST, PORT))
@@ -35,10 +35,10 @@ agora = time.time()
 print("\nCalculando estatísticas...\n")
 
 print("Download")
-print("Taxa de pacotes/s: %.2f" % (qtdPacotes / (agora - inicio)))
-print("Taxa de bits/s: %.2f" % ((qtdPacotes * tamanhoPacote * 8) / (agora - inicio)))
-print("Tempo total executado: %.2f segundos" % (agora - inicio))
-print("Total de bits transmitidos: %.2f bits" % (qtdPacotes * tamanhoPacote * 8))
+print("Taxa de pacotes/s: :,%.2f" % (qtdPacotes / (agora - inicio)))
+print("Taxa de bits/s: :,%.2f" % ((qtdPacotes * tamanhoPacote * 8) / (agora - inicio)))
+print("Tempo total executado: :,%.2f segundos" % (agora - inicio))
+print("Total de bits transmitidos: :,%.2f bits" % (qtdPacotes * tamanhoPacote * 8))
 
 # Limpando buffers e sockets
 sock.close()
