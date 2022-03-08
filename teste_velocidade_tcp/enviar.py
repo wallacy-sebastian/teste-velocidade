@@ -6,7 +6,7 @@ from math import floor
 from sys import getsizeof
 import sys
 
-HOST = "127.0.0.1"
+HOST = "10.90.67.91"
 PORT = 8000
 
 ponto_env = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -35,12 +35,12 @@ while True:
     if(fim - inicio) >= 20:
         break
     print("\r", end='')
-    print(f"Bytes enviados: {progresso} b", end='')
+    print(f"Bytes enviados: {progresso*8} B", end='')
     numero_pacotes += 1
     
 ponto_env.close()
 print("\n")
 print(f"Número de pacotes: {numero_pacotes}")
-print(f"Upload\nPacotes/s: {numero_pacotes/(fim-inicio)}\nBits/s: {(numero_pacotes*tam*8)/(fim-inicio)}")
+print(f"Upload\nPacotes/s: {'{:,.2f}'.format(numero_pacotes/(fim-inicio))}\nBits/s: {'{:,.2f}'.format((numero_pacotes*tam*8)/(fim-inicio))}")
 print(f"Total de bytes: {numero_pacotes*tam}\nTempo: {fim-inicio}")
 
