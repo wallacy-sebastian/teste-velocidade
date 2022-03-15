@@ -42,5 +42,5 @@ ponto_env.close()
 print("\n")
 print(f"Número de pacotes: {numero_pacotes}")
 print(f"Upload\nPacotes/s: {'{:,.2f}'.format(numero_pacotes/(fim-inicio))}\nBits/s: {'{:,.2f}'.format((numero_pacotes*tam*8)/(fim-inicio))}")
-print(f"Total de bytes: {numero_pacotes*tam}\nTempo: {fim-inicio}")
+print(f"Total de bytes: {'{:,}'.format(numero_pacotes*tam)}\nTempo: {fim-inicio}")
 

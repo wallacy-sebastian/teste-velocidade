@@ -4,7 +4,7 @@ import socket
 import time
 import sys
 
-HOST = "10.90.67.91" 
+HOST = "10.90.67.127" 
 PORT = 8000
 ponto_rec = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ponto_rec.bind((HOST,PORT))
@@ -38,5 +38,5 @@ while True:
     numero_pacotes += 1
 ponto_rec.close()
 print("\n")
-print(f"Download\nPacotes/s: {numero_pacotes/(end-start)}\nBits/s: {'{:,.2f}'.format((numero_pacotes*tam*8)/(end-start)})")
-print(f"Total de bytes: '{:,}'.format({numero_pacotes*tam})\nTempo: {end-start}")
+print(f"Download\nPacotes/s: {'{:,}'.format({numero_pacotes/(end-start)})}\nBits/s: {'{:,.2f}'.format((numero_pacotes*tam*8)/(end-start))}")
+print(f"Total de bytes: {'{:,}'.format({numero_pacotes*tam})}\nTempo: {end-start}")
