@@ -6,7 +6,7 @@ from math import floor
 from sys import getsizeof
 import sys
 
-HOST = "10.90.67.91"
+HOST = "191.52.64.209"
 PORT = 8000
 
 ponto_env = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
