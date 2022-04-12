@@ -63,6 +63,8 @@ else:
     while True:
         dados = ponto_rec.recv(tam)
         fim = time.time()
+        if(fim - inicio) >= 20:
+            break
         if int.from_bytes(dados, "little") == 0:
             print("\nFim da conexão")
             break
