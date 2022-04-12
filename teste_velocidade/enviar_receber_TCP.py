@@ -2,7 +2,7 @@ from sys import getsizeof
 import socket
 import time
 
-HOST = "localhost"
+HOST = "25.72.92.250"
 PORT = 7000
 str_teste = "teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de rede *2022*teste de re"
 
